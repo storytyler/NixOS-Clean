@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Revert all unstaged changes to get back to working state",
+    "status": "in_progress",
+    "activeForm": "Reverting all unstaged changes to get back to working state"
+  },
+  {
+    "content": "Test the build to confirm it works",
+    "status": "pending",
+    "activeForm": "Testing the build to confirm it works"
+  },
+  {
+    "content": "Carefully re-apply networking changes if needed",
+    "status": "pending",
+    "activeForm": "Carefully re-applying networking changes if needed"
+  }
+]

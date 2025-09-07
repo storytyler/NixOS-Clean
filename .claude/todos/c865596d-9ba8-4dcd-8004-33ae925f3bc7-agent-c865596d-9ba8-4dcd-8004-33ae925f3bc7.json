@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Analyze current MCP server configurations and identify issues",
+    "status": "completed",
+    "activeForm": "Analyzing current MCP server configurations and identifying issues"
+  },
+  {
+    "content": "Fix socat ENOENT error for nixai server",
+    "status": "completed",
+    "activeForm": "Fixing socat ENOENT error for nixai server"
+  },
+  {
+    "content": "Fix connection issues for github-semantic and mcpmcp servers",
+    "status": "completed",
+    "activeForm": "Fixing connection issues for github-semantic and mcpmcp servers"
+  },
+  {
+    "content": "Verify MCP server configurations are working",
+    "status": "in_progress",
+    "activeForm": "Verifying MCP server configurations are working"
+  }
+]

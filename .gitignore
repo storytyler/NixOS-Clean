@@ -1,0 +1,27 @@
+# Existing content
+*.swp
+*.tmp
+*.log
+.DS_Store
+Thumbs.db
+
+# AI/Cognitive Protocols/Sources directory
+AI/
+
+# Stylix directories
+GO through this/stylix-master/
+stylix-no-gnome/
+
+# Build artifacts
+result
+
+# Secrets - prevent sensitive files from being committed
+secrets/ai-keys.env
+secrets/gemini-api-key.yaml
+secrets/*.env
+secrets/*.yaml
+secrets/*.age
+secrets/AIClient-2-API-main/provider_pools.json
+
+# Generated or modified secret files
+secrets.nix

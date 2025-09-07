@@ -1,0 +1,57 @@
+[
+  {
+    "content": "Create basic WireGuard mesh module (minimal)",
+    "status": "completed",
+    "activeForm": "Creating basic WireGuard mesh module"
+  },
+  {
+    "content": "Test WireGuard connectivity between machines",
+    "status": "completed",
+    "activeForm": "Testing WireGuard connectivity between machines"
+  },
+  {
+    "content": "Apply WireGuard configuration to Station-00",
+    "status": "completed",
+    "activeForm": "Applying WireGuard configuration to Station-00"
+  },
+  {
+    "content": "Generate WireGuard keys and configure interface",
+    "status": "completed",
+    "activeForm": "Generating WireGuard keys and configuring interface"
+  },
+  {
+    "content": "Generate fresh WireGuard keys for all machines",
+    "status": "completed",
+    "activeForm": "Generating fresh WireGuard keys for all machines"
+  },
+  {
+    "content": "Update mesh.yaml with generated keys",
+    "status": "completed",
+    "activeForm": "Updating mesh.yaml with generated keys"
+  },
+  {
+    "content": "Encrypt mesh.yaml with SOPS",
+    "status": "completed",
+    "activeForm": "Encrypting mesh.yaml with SOPS"
+  },
+  {
+    "content": "Fix SOPS AGE key file permissions",
+    "status": "completed",
+    "activeForm": "Fixing SOPS AGE key file permissions"
+  },
+  {
+    "content": "Fix sops-nix module import in flake configuration",
+    "status": "completed",
+    "activeForm": "Fixing sops-nix module import in flake configuration"
+  },
+  {
+    "content": "Fix WireGuard dummy key format for valid base64",
+    "status": "in_progress",
+    "activeForm": "Fixing WireGuard dummy key format for valid base64"
+  },
+  {
+    "content": "Add basic NFS shared storage",
+    "status": "pending",
+    "activeForm": "Adding basic NFS shared storage"
+  }
+]

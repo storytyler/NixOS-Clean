@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Configure mcp-agent as orchestrator connecting to our servers",
+    "status": "completed",
+    "activeForm": "Configuring mcp-agent orchestrator"
+  },
+  {
+    "content": "Run mcp-agent orchestrator separately from mcp-hub",
+    "status": "in_progress",
+    "activeForm": "Running mcp-agent orchestrator separately"
+  },
+  {
+    "content": "Connect Claude directly to mcp-agent orchestrator",
+    "status": "pending",
+    "activeForm": "Connecting to mcp-agent orchestrator"
+  }
+]

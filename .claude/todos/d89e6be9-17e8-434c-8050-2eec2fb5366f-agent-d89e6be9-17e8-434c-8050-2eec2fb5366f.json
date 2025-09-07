@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Test minimal mcp-agent example",
+    "status": "in_progress",
+    "activeForm": "Testing minimal example"
+  },
+  {
+    "content": "Deploy comprehensive nix-shell solution",
+    "status": "in_progress",
+    "activeForm": "Deploying nix-shell solution"
+  },
+  {
+    "content": "Test working server immediately",
+    "status": "pending",
+    "activeForm": "Testing working server"
+  }
+]

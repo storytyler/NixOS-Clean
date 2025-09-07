@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Diagnose Subrelay-01 syntax error at line 280",
+    "status": "completed",
+    "activeForm": "Diagnosing Subrelay-01 syntax error at line 280"
+  },
+  {
+    "content": "Fix configuration.nix syntax issue",
+    "status": "completed",
+    "activeForm": "Fixing configuration.nix syntax issue"
+  },
+  {
+    "content": "Test rebuild on Subrelay-01",
+    "status": "in_progress",
+    "activeForm": "Testing rebuild on Subrelay-01"
+  }
+]

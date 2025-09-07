@@ -1,0 +1,136 @@
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}: {
+  wayland.windowManager.hyprland = {
+    enable = false;  # Disabled - using user.nix configuration instead
+    
+    settings = {
+      # Essential keybinds for rofi and system controls
+      bind = [
+        # Rofi launchers
+        "SUPER, D, exec, rofi -show drun"           # App launcher
+        "SUPER, Tab, exec, rofi -show window"       # Window switcher  
+        "SUPER, E, exec, rofi -show emoji"          # Emoji picker
+        "SUPER, G, exec, rofi -show games"          # Games launcher
+        "SUPER, R, exec, rofi -show filebrowser"    # File browser (changed from F to avoid fullscreen conflict)
+        
+        # Essential system hotkeys
+        "SUPER, Return, exec, alacritty"            # Terminal
+        "SUPER, C, killactive"                      # Close window (changed from Q to avoid conflicts)
+        "SUPER SHIFT, E, exit"                      # Exit Hyprland (changed from Q to avoid conflicts)  
+        "SUPER, Space, togglefloating"              # Toggle floating (changed from V)
+        "SUPER, F11, fullscreen"                    # Fullscreen (moved to F11 to free up F)
+        "SUPER, P, pseudo"                          # Pseudo tiling
+        "SUPER, S, togglesplit"                     # Toggle split (changed from J to avoid vim conflicts)
+        # NOTE: Super + W is reserved for your window snapping toggle
+        
+        # Movement (using arrow keys to avoid conflicts with vim users)
+        "SUPER, left, movefocus, l"
+        "SUPER, right, movefocus, r"
+        "SUPER, up, movefocus, u"
+        "SUPER, down, movefocus, d"
+        # Vim-style movement (ALT + vim keys to avoid conflicts)
+        "ALT, H, movefocus, l"
+        "ALT, L, movefocus, r"
+        "ALT, K, movefocus, u"
+        "ALT, J, movefocus, d"
+        
+        # Workspaces
+        "SUPER, 1, workspace, 1"
+        "SUPER, 2, workspace, 2"
+        "SUPER, 3, workspace, 3"
+        "SUPER, 4, workspace, 4"
+        "SUPER, 5, workspace, 5"
+        "SUPER, 6, workspace, 6"
+        "SUPER, 7, workspace, 7"
+        "SUPER, 8, workspace, 8"
+        "SUPER, 9, workspace, 9"
+        "SUPER, 0, workspace, 10"
+        
+        # Move to workspace
+        "SUPER SHIFT, 1, movetoworkspace, 1"
+        "SUPER SHIFT, 2, movetoworkspace, 2"
+        "SUPER SHIFT, 3, movetoworkspace, 3"
+        "SUPER SHIFT, 4, movetoworkspace, 4"
+        "SUPER SHIFT, 5, movetoworkspace, 5"
+        "SUPER SHIFT, 6, movetoworkspace, 6"
+        "SUPER SHIFT, 7, movetoworkspace, 7"
+        "SUPER SHIFT, 8, movetoworkspace, 8"
+        "SUPER SHIFT, 9, movetoworkspace, 9"
+        "SUPER SHIFT, 0, movetoworkspace, 10"
+        
+        # Media keys
+        ", XF86AudioRaiseVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ +5%"
+        ", XF86AudioLowerVolume, exec, wpctl set-volume @DEFAULT_AUDIO_SINK@ -5%"
+        ", XF86AudioMute, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle"
+        ", XF86AudioPlay, exec, playerctl play-pause"
+        ", XF86AudioPause, exec, playerctl play-pause"
+        ", XF86AudioNext, exec, playerctl next"
+        ", XF86AudioPrev, exec, playerctl previous"
+        
+        # Screenshot
+        ", Print, exec, grim -g \"$(slurp)\" - | wl-copy"
+        "SHIFT, Print, exec, grim - | wl-copy"
+      ];
+      
+      # Mouse bindings
+      bindm = [
+        "SUPER, mouse:272, movewindow"
+        "SUPER, mouse:273, resizewindow"
+      ];
+      
+      # Basic Hyprland settings
+      general = {
+        gaps_in = 5;
+        gaps_out = 10;
+        border_size = 2;
+        "col.active_border" = "rgba(89b4faff)";
+        "col.inactive_border" = "rgba(313244ff)";
+        layout = "dwindle";
+      };
+      
+      decoration = {
+        rounding = 8;
+        blur = {
+          enabled = true;
+          size = 8;
+          passes = 3;
+        };
+        drop_shadow = true;
+        shadow_range = 4;
+        shadow_render_power = 3;
+        "col.shadow" = "rgba(1a1a1aee)";
+      };
+      
+      animations = {
+        enabled = true;
+        bezier = "myBezier, 0.05, 0.9, 0.1, 1.05";
+        animation = [
+          "windows, 1, 7, myBezier"
+          "windowsOut, 1, 7, default, popin 80%"
+          "border, 1, 10, default"
+          "borderangle, 1, 8, default"
+          "fade, 1, 7, default"
+          "workspaces, 1, 6, default"
+        ];
+      };
+      
+      dwindle = {
+        pseudotile = true;
+        preserve_split = true;
+      };
+      
+      gestures = {
+        workspace_swipe = false;
+      };
+      
+      misc = {
+        force_default_wallpaper = 0;
+        disable_hyprland_logo = true;
+      };
+    };
+  };
+}

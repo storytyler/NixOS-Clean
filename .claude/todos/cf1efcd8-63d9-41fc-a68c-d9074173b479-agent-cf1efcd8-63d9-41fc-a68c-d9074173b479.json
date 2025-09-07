@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Test configuration build",
+    "status": "completed",
+    "activeForm": "Testing configuration build"
+  },
+  {
+    "content": "Deploy Mistral integration to system",
+    "status": "pending",
+    "activeForm": "Deploying Mistral integration"
+  }
+]

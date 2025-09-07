@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Fix module path error in workstation profile",
+    "status": "in_progress",
+    "activeForm": "Fixing module path error in workstation profile"
+  },
+  {
+    "content": "Rebuild system successfully",
+    "status": "pending",
+    "activeForm": "Rebuilding system successfully"
+  },
+  {
+    "content": "Verify Gemini CLI works after rebuild",
+    "status": "pending",
+    "activeForm": "Verifying Gemini CLI works after rebuild"
+  }
+]

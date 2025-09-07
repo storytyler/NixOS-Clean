@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Fix code indexer package availability in PATH",
+    "status": "in_progress",
+    "activeForm": "Fixing code indexer package availability in PATH"
+  },
+  {
+    "content": "Resolve MCP config vs NixOS implementation mismatch",
+    "status": "pending",
+    "activeForm": "Resolving MCP config vs NixOS implementation mismatch"
+  },
+  {
+    "content": "Test code indexer MCP server functionality",
+    "status": "pending",
+    "activeForm": "Testing code indexer MCP server functionality"
+  }
+]

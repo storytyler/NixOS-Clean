@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Research datavzrd installation and setup requirements",
+    "status": "completed",
+    "activeForm": "Researched datavzrd setup requirements"
+  },
+  {
+    "content": "Document basic datavzrd usage and configuration",
+    "status": "completed",
+    "activeForm": "Documented datavzrd usage and configuration"
+  },
+  {
+    "content": "Explore datavzrd examples for research data use cases",
+    "status": "completed",
+    "activeForm": "Explored datavzrd research examples"
+  },
+  {
+    "content": "Test datavzrd integration with our empathy research data structure",
+    "status": "pending",
+    "activeForm": "Testing datavzrd with empathy research data"
+  }
+]

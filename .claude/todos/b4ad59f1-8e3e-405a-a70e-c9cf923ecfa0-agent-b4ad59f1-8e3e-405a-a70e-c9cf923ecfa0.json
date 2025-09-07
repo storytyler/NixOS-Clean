@@ -1,0 +1,52 @@
+[
+  {
+    "content": "Diagnose system boot issues - no hotkeys or apps working",
+    "status": "completed",
+    "activeForm": "Diagnosing system boot issues"
+  },
+  {
+    "content": "Check current NixOS generation and configuration",
+    "status": "completed",
+    "activeForm": "Checking current NixOS generation"
+  },
+  {
+    "content": "Investigate NetworkManager configuration issue",
+    "status": "completed",
+    "activeForm": "Investigating NetworkManager configuration"
+  },
+  {
+    "content": "Verify desktop environment and hotkey configurations",
+    "status": "completed",
+    "activeForm": "Verifying desktop environment configuration"
+  },
+  {
+    "content": "Check SDDM theme configuration and fix broken themes",
+    "status": "completed",
+    "activeForm": "Checking SDDM theme configuration"
+  },
+  {
+    "content": "Rollback to generation 89 (known working)",
+    "status": "completed",
+    "activeForm": "Rolling back to generation 89"
+  },
+  {
+    "content": "Force kill SDDM sessions to enable reboot",
+    "status": "completed",
+    "activeForm": "Force killing SDDM sessions"
+  },
+  {
+    "content": "Stop display manager and reboot system",
+    "status": "completed",
+    "activeForm": "Stopping display manager and rebooting"
+  },
+  {
+    "content": "Verify system functionality after rollback",
+    "status": "pending",
+    "activeForm": "Verifying system functionality"
+  },
+  {
+    "content": "Investigate what broke between generations 89-93",
+    "status": "pending",
+    "activeForm": "Investigating what broke"
+  }
+]

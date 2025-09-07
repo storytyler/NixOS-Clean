@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Clean up waybar configuration duplication - keep only Home Manager version",
+    "status": "completed",
+    "activeForm": "Cleaned up waybar configuration duplication"
+  },
+  {
+    "content": "Apply same cleanup to all other Hyprland programs (hypridle, hyprlock, swaync)",
+    "status": "completed",
+    "activeForm": "Applied cleanup to all Hyprland programs"
+  },
+  {
+    "content": "Fix hyprlock module system type error",
+    "status": "completed",
+    "activeForm": "Fixed hyprlock module system error"
+  },
+  {
+    "content": "Test nixos-rebuild after all architecture fixes",
+    "status": "completed",
+    "activeForm": "Successfully tested nixos-rebuild"
+  },
+  {
+    "content": "Verify all services and hotkeys work after rebuild",
+    "status": "pending",
+    "activeForm": "Verifying services and hotkeys after rebuild"
+  }
+]

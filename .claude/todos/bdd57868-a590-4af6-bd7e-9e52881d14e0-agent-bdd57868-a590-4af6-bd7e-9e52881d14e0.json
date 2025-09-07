@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Fix tree-sitter-typescript package reference error",
+    "status": "completed",
+    "activeForm": "Fixing tree-sitter-typescript package reference error"
+  },
+  {
+    "content": "Rebuild system with corrected dependencies",
+    "status": "in_progress",
+    "activeForm": "Rebuilding system with corrected dependencies"
+  },
+  {
+    "content": "Verify all MCP services start successfully",
+    "status": "pending",
+    "activeForm": "Verifying all MCP services start successfully"
+  }
+]

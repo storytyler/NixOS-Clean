@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Configure NixAI to output pure JSON for MCP compliance",
+    "status": "completed",
+    "activeForm": "Configuring NixAI to output pure JSON for MCP compliance"
+  },
+  {
+    "content": "Fix aiclient-proxy binary name mismatch",
+    "status": "completed",
+    "activeForm": "Fixing aiclient-proxy binary name mismatch"
+  },
+  {
+    "content": "Address NixOS read-only filesystem issue preventing service disabling",
+    "status": "completed",
+    "activeForm": "Addressing NixOS read-only filesystem issue preventing service disabling"
+  },
+  {
+    "content": "Identify why MCP services are enabled without explicit configuration",
+    "status": "completed",
+    "activeForm": "Identifying why MCP services are enabled without explicit configuration"
+  },
+  {
+    "content": "Rebuild NixOS configuration to apply fixes",
+    "status": "pending",
+    "activeForm": "Rebuilding NixOS configuration to apply fixes"
+  }
+]

@@ -1,0 +1,33 @@
+# Claude Code Initialization Script
+# Automatically loads persistent memory and cognitive framework
+
+# Colors
+GREEN='\033[0;32m'
+BLUE='\033[0;34m'
+NC='\033[0m'
+
+# Auto-load memory system on startup
+if [[ -f "/home/player00/NixOS/agentic/memory-loader.sh" ]]; then
+    echo -e "${BLUE}🚀 Auto-loading cognitive memory system...${NC}"
+    source "/home/player00/NixOS/agentic/memory-loader.sh"
+else
+    echo -e "${RED}❌ Memory loader not found${NC}"
+fi
+
+# Create cognition alias
+alias cognition='python3 /home/player00/NixOS/agentic/cognition-protocol.py'
+
+# Export cognition function to make it available globally  
+cognition() {
+    python3 /home/player00/NixOS/agentic/cognition-protocol.py "$@"
+}
+
+# Qwen Context Command alias
+alias qwen-context='/home/player00/NixOS/agentic/commands/qwen-context.sh'
+alias qc='/home/player00/NixOS/agentic/commands/qwen-context.sh'
+
+export -f cognition
+
+echo -e "${GREEN}✅ Cognitive framework loaded${NC}"
+echo -e "${BLUE}💡 Use: cognition [protocol] [task] to activate protocols${NC}"
+echo -e "${BLUE}💡 Use: qwen-context or qc for environment context${NC}"

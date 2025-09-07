@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Check system status and identify boot time issue",
+    "status": "completed",
+    "activeForm": "Checking system status and identifying boot time issue"
+  },
+  {
+    "content": "Investigate MCP server configuration causing boot problems",
+    "status": "completed",
+    "activeForm": "Investigating MCP server configuration causing boot problems"
+  },
+  {
+    "content": "Fix MCP aiclient-proxy service configuration",
+    "status": "completed",
+    "activeForm": "Fixing MCP aiclient-proxy service configuration"
+  },
+  {
+    "content": "Document findings and provide fix recommendations",
+    "status": "completed",
+    "activeForm": "Documenting findings and providing fix recommendations"
+  },
+  {
+    "content": "Fix network manager startup issue",
+    "status": "pending",
+    "activeForm": "Fixing network manager startup issue"
+  }
+]

@@ -1,0 +1,22 @@
+[
+  {
+    "content": "Check Neo4j availability in NixOS packages",
+    "status": "completed",
+    "activeForm": "Checking Neo4j availability in NixOS packages"
+  },
+  {
+    "content": "Design Neo4j agent memory service module",
+    "status": "in_progress",
+    "activeForm": "Designing Neo4j agent memory service module"
+  },
+  {
+    "content": "Create MCP Neo4j memory server integration",
+    "status": "pending",
+    "activeForm": "Creating MCP Neo4j memory server integration"
+  },
+  {
+    "content": "Test Neo4j + agent memory system",
+    "status": "pending",
+    "activeForm": "Testing Neo4j + agent memory system"
+  }
+]

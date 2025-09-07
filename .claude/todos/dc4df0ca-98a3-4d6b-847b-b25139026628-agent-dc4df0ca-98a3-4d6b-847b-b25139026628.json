@@ -1,0 +1,62 @@
+[
+  {
+    "content": "Check hardware configurations for Scout-02 and Subrelay-01",
+    "status": "completed",
+    "activeForm": "Checking hardware configurations"
+  },
+  {
+    "content": "Set up SSH key infrastructure for machine-to-machine communication",
+    "status": "completed",
+    "activeForm": "Setting up SSH keys"
+  },
+  {
+    "content": "Test SSH connectivity to Subrelay-01 (192.168.1.147)",
+    "status": "completed",
+    "activeForm": "Testing SSH connectivity to Subrelay-01"
+  },
+  {
+    "content": "Fix SSH authorized keys and network config for Subrelay-01",
+    "status": "completed",
+    "activeForm": "Fixing SSH and network configuration"
+  },
+  {
+    "content": "Add SSH public key to Subrelay-01 authorized_keys",
+    "status": "completed",
+    "activeForm": "Adding SSH key to Subrelay-01"
+  },
+  {
+    "content": "Enable SSH server on Station-00",
+    "status": "completed",
+    "activeForm": "Enabling SSH server"
+  },
+  {
+    "content": "Clone NixOS configuration from Station-00 to Subrelay-01",
+    "status": "completed",
+    "activeForm": "Cloning from Station-00"
+  },
+  {
+    "content": "Fix Docker configuration error in Subrelay-01",
+    "status": "in_progress",
+    "activeForm": "Fixing Docker configuration"
+  },
+  {
+    "content": "Deploy current configuration to Subrelay-01",
+    "status": "pending",
+    "activeForm": "Deploying to Subrelay-01"
+  },
+  {
+    "content": "Configure network addressing and WireGuard mesh for all machines",
+    "status": "pending",
+    "activeForm": "Configuring network mesh"
+  },
+  {
+    "content": "Set up deploy-rs for coordinated multi-machine deployments",
+    "status": "pending",
+    "activeForm": "Setting up deployment orchestration"
+  },
+  {
+    "content": "Install NixOS on Scout-02 after network setup",
+    "status": "pending",
+    "activeForm": "Installing NixOS on Scout-02"
+  }
+]

@@ -1,0 +1,2 @@
+# Ignore the Obsidian vault from Nix builds
+Obsidian/

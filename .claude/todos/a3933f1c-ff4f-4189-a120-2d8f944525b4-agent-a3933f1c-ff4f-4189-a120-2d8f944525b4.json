@@ -1,0 +1,87 @@
+[
+  {
+    "content": "Fix critical bug: missing 'import requests' in library_query.py",
+    "status": "completed",
+    "activeForm": "Fixing missing import in library_query.py"
+  },
+  {
+    "content": "Fix unreachable code after exit(1) in library_query.py",
+    "status": "completed",
+    "activeForm": "Fixing unreachable code in library_query.py"
+  },
+  {
+    "content": "Test library_query.py functionality",
+    "status": "completed",
+    "activeForm": "Testing library query script functionality"
+  },
+  {
+    "content": "Configure NixOS system for local library server",
+    "status": "completed",
+    "activeForm": "Configuring NixOS system for local library server"
+  },
+  {
+    "content": "Check for server configuration conflicts",
+    "status": "completed",
+    "activeForm": "Checking for server configuration conflicts"
+  },
+  {
+    "content": "Fix MCP vectorMemoryMcpPackage reference error",
+    "status": "completed",
+    "activeForm": "Fixing MCP package reference error"
+  },
+  {
+    "content": "Fix missing vector_memory_mcp_server.py path",
+    "status": "completed",
+    "activeForm": "Fixing missing MCP server file path"
+  },
+  {
+    "content": "Research Vector.dev as PostgreSQL+pgvector replacement",
+    "status": "completed",
+    "activeForm": "Researching Vector.dev architecture"
+  },
+  {
+    "content": "Analyze Weaviate and Elysia integration options",
+    "status": "completed",
+    "activeForm": "Analyzing Weaviate and Elysia integration"
+  },
+  {
+    "content": "Plan iterative migration strategy",
+    "status": "completed",
+    "activeForm": "Planning iterative migration strategy"
+  },
+  {
+    "content": "Fix immediate PostgreSQL compatibility for current system",
+    "status": "completed",
+    "activeForm": "Fixing PostgreSQL compatibility issue"
+  },
+  {
+    "content": "Document architecture roadmap and migration plan",
+    "status": "completed",
+    "activeForm": "Documenting architecture roadmap"
+  },
+  {
+    "content": "Create automatic reminder trigger for vector discussions",
+    "status": "completed",
+    "activeForm": "Creating vector architecture reminder trigger"
+  },
+  {
+    "content": "Fix vectorized-memory service PostgreSQL 18 reference",
+    "status": "completed",
+    "activeForm": "Fixing vectorized-memory PostgreSQL version"
+  },
+  {
+    "content": "Rebuild NixOS system to apply changes",
+    "status": "completed",
+    "activeForm": "Rebuilding NixOS system"
+  },
+  {
+    "content": "Fix service startup issues",
+    "status": "in_progress",
+    "activeForm": "Fixing service startup problems"
+  },
+  {
+    "content": "Test current system functionality",
+    "status": "pending",
+    "activeForm": "Testing current system"
+  }
+]

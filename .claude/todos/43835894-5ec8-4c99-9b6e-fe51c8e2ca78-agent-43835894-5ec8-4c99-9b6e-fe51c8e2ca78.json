@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Launch multi-machine deployment coordination agents",
+    "status": "in_progress",
+    "activeForm": "Launching multi-machine deployment coordination agents"
+  },
+  {
+    "content": "Fix Subrelay-01 firewall configuration error",
+    "status": "pending",
+    "activeForm": "Fixing Subrelay-01 firewall configuration error"
+  },
+  {
+    "content": "Deploy Subrelay-01 system configuration",
+    "status": "pending",
+    "activeForm": "Deploying Subrelay-01 system configuration"
+  },
+  {
+    "content": "Onboard Scout-02 system configuration",
+    "status": "pending",
+    "activeForm": "Onboarding Scout-02 system configuration"
+  },
+  {
+    "content": "Validate multi-machine mesh network connectivity",
+    "status": "pending",
+    "activeForm": "Validating multi-machine mesh network connectivity"
+  }
+]

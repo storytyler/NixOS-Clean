@@ -1,0 +1,27 @@
+[
+  {
+    "content": "Create /tmp directory on Subrelay-01",
+    "status": "in_progress",
+    "activeForm": "Creating /tmp directory on Subrelay-01"
+  },
+  {
+    "content": "Clone NixOS repo to /tmp on Subrelay-01",
+    "status": "pending",
+    "activeForm": "Cloning NixOS repo to /tmp on Subrelay-01"
+  },
+  {
+    "content": "Run NixOS rebuild on Subrelay-01",
+    "status": "pending",
+    "activeForm": "Running NixOS rebuild on Subrelay-01"
+  },
+  {
+    "content": "Switch to new configuration on Subrelay-01",
+    "status": "pending",
+    "activeForm": "Switching to new configuration on Subrelay-01"
+  },
+  {
+    "content": "Verify full integration on Subrelay-01",
+    "status": "pending",
+    "activeForm": "Verifying full integration on Subrelay-01"
+  }
+]

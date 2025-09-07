@@ -1,0 +1,12 @@
+[
+  {
+    "content": "Found .mcp.json file, removing MCP config",
+    "status": "completed",
+    "activeForm": "Found .mcp.json file, removing MCP config"
+  },
+  {
+    "content": "Remove .mcp.json file",
+    "status": "in_progress",
+    "activeForm": "Removing .mcp.json file"
+  }
+]

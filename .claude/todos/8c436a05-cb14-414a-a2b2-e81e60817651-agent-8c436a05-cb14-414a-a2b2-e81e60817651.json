@@ -1,0 +1,17 @@
+[
+  {
+    "content": "Test access to archived folders",
+    "status": "completed",
+    "activeForm": "Testing access to archived folders"
+  },
+  {
+    "content": "Configure PostgreSQL MCP server for all AI systems",
+    "status": "pending",
+    "activeForm": "Configuring PostgreSQL MCP server for all AI systems"
+  },
+  {
+    "content": "Test PostgreSQL MCP functionality",
+    "status": "pending",
+    "activeForm": "Testing PostgreSQL MCP functionality"
+  }
+]

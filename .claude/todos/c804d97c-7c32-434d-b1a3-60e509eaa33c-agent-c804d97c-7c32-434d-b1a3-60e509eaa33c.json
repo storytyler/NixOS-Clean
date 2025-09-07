@@ -1,0 +1,37 @@
+[
+  {
+    "content": "Create basic WireGuard mesh module (minimal)",
+    "status": "completed",
+    "activeForm": "Creating basic WireGuard mesh module (minimal)"
+  },
+  {
+    "content": "Test WireGuard connectivity between machines",
+    "status": "completed",
+    "activeForm": "Testing WireGuard connectivity between machines"
+  },
+  {
+    "content": "Apply WireGuard configuration to Station-00",
+    "status": "completed",
+    "activeForm": "Applying WireGuard configuration to Station-00"
+  },
+  {
+    "content": "Generate WireGuard keys and configure interface",
+    "status": "completed",
+    "activeForm": "Generating WireGuard keys and configuring interface"
+  },
+  {
+    "content": "Add WireGuard keys to SOPS secrets (manual step)",
+    "status": "in_progress",
+    "activeForm": "Adding WireGuard keys to SOPS secrets (manual step)"
+  },
+  {
+    "content": "Test basic interface functionality",
+    "status": "pending",
+    "activeForm": "Testing basic interface functionality"
+  },
+  {
+    "content": "Add basic NFS shared storage",
+    "status": "pending",
+    "activeForm": "Adding basic NFS shared storage"
+  }
+]
