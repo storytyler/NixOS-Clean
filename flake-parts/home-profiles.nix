@@ -29,6 +29,9 @@
     ../modules/programs/cli/cava/home.nix
     ../modules/programs/cli/btop/home.nix
     ../modules/programs/cli/yazi/home.nix
+    
+    # Terminal
+    ../modules/programs/terminal/alacritty/home.nix
 
     # Media app configs
     ../modules/programs/media/discord/home.nix
@@ -44,13 +47,7 @@
 
   # User-specific packages
   home.packages = with pkgs; [
-    (buildNpmPackage {
-      pname = "gemini-cli";
-      version = "latest";
-      src = inputs.gemini-cli-src;
-      npmDepsHash = lib.fakeHash;
-      dontNpmBuild = true;
-    })
+    gemini-cli
     claude-code
     qwen-code
     git

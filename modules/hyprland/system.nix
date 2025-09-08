@@ -70,16 +70,15 @@
   ];
 
   # Hyprland plugins via shared modules - minimal config to avoid conflicts
-  # NOTE: Plugins temporarily disabled due to symbol mismatch with current Hyprland version
-  # Will be re-enabled when hyprland-plugins is updated to match current Hyprland
-  # home-manager.sharedModules = [
-  #   ({...}: {
-  #     # Only set plugins here - all other config in user.nix
-  #     wayland.windowManager.hyprland.plugins = with inputs.hyprland-plugins.packages.${pkgs.system}; [
-  #       borders-plus-plus    # Enhanced borders with RGB gradients
-  #       hyprwinwrap         # Desktop widgets & animated wallpapers
-  #       hyprexpo            # Smooth workspace overview effects
-  #     ];
-  #   })
-  # ];
+  # NOTE: Re-enabling plugins to test current compatibility
+  home-manager.sharedModules = [
+    ({...}: {
+      # Only set plugins here - all other config in user.nix
+      wayland.windowManager.hyprland.plugins = with inputs.hyprland-plugins.packages.${pkgs.system}; [
+        borders-plus-plus    # Enhanced borders with RGB gradients
+        hyprwinwrap         # Desktop widgets & animated wallpapers
+        # hyprexpo            # Disabled - command not working
+      ];
+    })
+  ];
 }

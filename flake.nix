@@ -119,11 +119,6 @@
       url = "github:olafkfreund/nix-ai-help";
     };
 
-    # Gemini CLI (latest from GitHub)
-    gemini-cli-src = {
-      url = "github:google-gemini/gemini-cli";
-      flake = false;
-    };
 
     };
 

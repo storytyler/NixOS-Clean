@@ -1,0 +1,22 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(claude mcp:*)",
+      "mcp__memory__read_graph",
+      "mcp__memory__create_relations",
+      "mcp__memory__search_nodes",
+      "mcp__memory__create_entities",
+      "Read(//home/player00/**)",
+      "Bash(nix-shell:*)",
+      "Bash(nix-instantiate:*)",
+      "Bash(nix eval:*)",
+      "Bash(mkdir:*)",
+      "Bash(npx:*)",
+      "mcp__octocode__githubGetFileContent",
+      "mcp__octocode__githubSearchCode",
+      "Read(//opt/ai-coordination/**)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

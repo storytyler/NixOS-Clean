@@ -5,7 +5,7 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/profiles/workstation.nix
-    ../../modules/services/mcp
+
   ];
 
   # Critical system services
@@ -17,13 +17,6 @@
   services.openssh.enable = true;
   services.dbus.enable = true;
   
-  # MCP (Model Context Protocol) services for AI agents
-  services.mcp = {
-    enable = true;
-    profile = "development";           # Enable development-level MCP servers
-    enableClaudeCode = true;           # Enable Claude Code agent configuration
-    claudeCodeProfile = "development"; # Use development profile for Claude Code
-  };
   
   # Enable zsh system-wide (required for user shell)
   programs.zsh.enable = true;

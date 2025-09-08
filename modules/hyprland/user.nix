@@ -46,6 +46,12 @@
         "NIXPKGS_ALLOW_UNFREE,1"
       ];
 
+      # Monitor configuration - LG TV left, Dell monitor right, bottom-aligned
+      monitor = [
+        "HDMI-A-2,3840x2160@30,0x0,1"        # LG TV at origin (left)
+        "HDMI-A-1,1920x1080@60,3840x1080,1"  # Dell monitor right, offset down 1080px for bottom alignment
+      ];
+
       exec-once = [
         # Add any autostart applications here
       ];
@@ -62,7 +68,7 @@
       # 🌟 PLUGIN CONFIGURATIONS 🌟
       # NOTE: Plugin configurations disabled until plugins are compatible with current Hyprland
       
-      # hyprexpo: Workspace overview (DISABLED - symbol mismatch)
+      # hyprexpo: Workspace overview (DISABLED - command not working)
       # "plugin:hyprexpo" = {
       #   columns = 3;                 # 3x3 workspace grid
       #   gap_size = 8;               # Spacing between workspace previews
@@ -73,13 +79,13 @@
       #   enable_gesture = true;       # Trackpad gesture support
       # };
 
-      # borders-plus-plus: RGB glowing borders (DISABLED - symbol mismatch)
-      # "plugin:borders-plus-plus" = {
-      #   add_borders = 1;              # Single border layer to test
-      #   "col.border_1" = "rgba(ff6ec7ee) rgba(89dcebee) 45deg";  # Hot pink to cyan gradient
-      #   border_size_1 = 2;           # Moderate thickness
-      #   natural_rounding = "yes";     # Smooth corners
-      # };
+      # borders-plus-plus: RGB glowing borders
+      "plugin:borders-plus-plus" = {
+        add_borders = 1;              # Single border layer to test
+        "col.border_1" = "rgba(ff6ec7ee) rgba(89dcebee) 45deg";  # Hot pink to cyan gradient
+        border_size_1 = 2;           # Moderate thickness
+        natural_rounding = "yes";     # Smooth corners
+      };
 
       # hyprwinwrap: For animated wallpapers later (DISABLED)
       # "plugin:hyprwinwrap" = {
@@ -100,7 +106,7 @@
 
       # 🚀 ENHANCED CYBERPUNK ANIMATIONS 🚀
       animations = {
-        enabled = true;
+        enabled = false;
         bezier = [
           "linear, 0, 0, 1, 1"
           "md3_standard, 0.2, 0, 0, 1"
@@ -164,6 +170,9 @@
         # Applications
         "$mainMod, T, exec, $term"
         "$mainMod, B, exec, $browser"
+        
+        # Plugin keybinds
+        # "$mainMod, Tab, hyprexpo:expo, toggle" # Workspace overview - disabled
         
         # Screenshots
         ", Print, exec, grimblast copy area"

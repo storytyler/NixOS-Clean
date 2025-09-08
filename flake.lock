@@ -543,22 +543,6 @@
         "type": "github"
       }
     },
-    "gemini-cli-src": {
-      "flake": false,
-      "locked": {
-        "lastModified": 1757276240,
-        "narHash": "sha256-mXAF4KcdL74R6cvAWfuS3NXYCBYaLoPLwXF4LPeqHzs=",
-        "owner": "google-gemini",
-        "repo": "gemini-cli",
-        "rev": "4693137b821a285948988932ef39ce5c39d65288",
-        "type": "github"
-      },
-      "original": {
-        "owner": "google-gemini",
-        "repo": "gemini-cli",
-        "type": "github"
-      }
-    },
     "git-hooks": {
       "inputs": {
         "flake-compat": [
@@ -1494,7 +1478,6 @@
         "claude-code": "claude-code",
         "devenv": "devenv",
         "flake-parts": "flake-parts_2",
-        "gemini-cli-src": "gemini-cli-src",
         "home-manager": "home-manager",
         "hyprland": "hyprland",
         "hyprland-plugins": "hyprland-plugins",

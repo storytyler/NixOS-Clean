@@ -1,0 +1,22 @@
+{
+  "selectedAuthType": "qwen-oauth",
+  "theme": "Dracula",
+  "mcpServers": {
+    "memory": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-memory@latest"]
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking@latest"],
+      "env": {
+        "MAX_THINKING_STEPS": "50",
+        "SEQUENTIAL_THINKING_MODE": "advanced"
+      }
+    },
+    "octocode": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-octocode@latest"]
+    }
+  }
+}
