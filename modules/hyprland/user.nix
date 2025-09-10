@@ -53,7 +53,9 @@
       ];
 
       exec-once = [
-        # Add any autostart applications here
+        "waybar"                    # Status bar
+        "swaync"                    # Notification daemon  
+        # Add any other autostart applications here
       ];
 
       # 🎨 Window appearance (colors managed by Stylix)
@@ -186,6 +188,12 @@
         # Brightness
         ", XF86MonBrightnessUp, exec, brightnessctl set +5%"
         ", XF86MonBrightnessDown, exec, brightnessctl set 5%-"
+        
+        # Notifications
+        "$mainMod, N, exec, notify-send 'Process Complete' 'Background task finished'"
+        
+        # Speech-to-Text (Press to start, press again to stop & transcribe)
+        "$mainMod, X, exec, bash -c 'if pgrep -f \"ffmpeg.*voice.wav\"; then pkill -f \"ffmpeg.*voice.wav\" && sleep 0.5 && whisper-cli -m ~/.cache/whisper/ggml-base.en.bin -l en --no-prints -f /tmp/voice.wav && rm -f /tmp/voice.wav; else ffmpeg -y -f pulse -i default -ar 16000 -ac 1 /tmp/voice.wav & notify-send \"Recording...\" \"Press Super+X again to stop\"; fi'"
 
         # Move focus with mainMod + arrow keys
         "$mainMod, left, movefocus, l"

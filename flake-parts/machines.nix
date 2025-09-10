@@ -172,7 +172,10 @@ with lib; {
   # System packages with quality and development tools
   environment.systemPackages = with pkgs;
     [
-
+      #llm
+      #Intended for dockerized instance
+      open-webui
+      
       # Core utilities
       vim
       git
@@ -211,6 +214,10 @@ with lib; {
       # System monitoring and maintenance
       nix-du # Visualize Nix store disk usage
       manix # Search Nix documentation
+
+      # Template engine tools
+      python313Packages.jinja2 # Jinja2 templating library
+      jinja2-cli # Command-line interface for Jinja2
     ]
     ++ (optionals (machineConfig.role != "server") [
       # Desktop/laptop extras

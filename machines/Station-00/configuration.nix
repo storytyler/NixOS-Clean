@@ -5,49 +5,75 @@
   imports = [
     ./hardware-configuration.nix
     ../../modules/profiles/workstation.nix
+    ../../flake-parts/machines.nix
 
   ];
 
-  # Critical system services
-  networking.networkmanager.enable = true;
-  networking.hostName = "Station-00";
-
-   
-  # Enable essential services
-  services.openssh.enable = true;
-  services.dbus.enable = true;
-  
+  # Machine-specific overrides
+  networking.hostName = "Station-00";  # Override default from machineConfig
   
   # Enable zsh system-wide (required for user shell)
   programs.zsh.enable = true;
   
-  # Boot loader configuration (UEFI)
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
-  
-  # User configuration
-  users.users.player00 = {
-    isNormalUser = true;
-    group = "player00";
-    extraGroups = [ "wheel" "networkmanager" "video" "audio" ];
-    shell = pkgs.zsh;
+  # Boot loader override - use systemd-boot instead of GRUB for this machine
+  boot.loader = {
+    grub.enable = lib.mkForce false;
+    systemd-boot.enable = true;
+    efi.canTouchEfiVariables = true;
   };
-  # System packages
+  
+  # Docker configuration - hybrid approach
+  virtualisation.docker = {
+    enable = true;
+    enableOnBoot = true;
+    # No GPU support needed for database containers
+    enableNvidia = false;
+    # Enable rootless mode for additional security
+    rootless = {
+      enable = true;
+      setSocketVariable = true;
+    };
+  };
+  
+  # Add user to docker group for admin access when needed
+  users.users.player00.extraGroups = [ "docker" ];
+
+  users.users.player00.subUidRanges = [
+    { startUid = 100000; count = 65536; }
+  ];
+  users.users.player00.subGidRanges = [
+    { startGid = 100000; count = 65536; }
+  ];
+  
+  # Enable podman as alternative for agent workloads
+  virtualisation.podman = {
+    enable = true;
+    # dockerCompat disabled to avoid conflict with Docker
+    dockerCompat = false;
+    defaultNetwork.settings.dns_enabled = true;
+  };
+
+  # Machine-specific system packages
   environment.systemPackages = with pkgs; [
     nodejs_24 # Includes npm
+    docker-compose # For multi-container orchestration
+    inputs.nix-ai-tools.packages.${pkgs.system}.claude-desktop # Claude Desktop for workflow management
+    
+    # Speech-to-Text
+    whisper-cpp # CPU-optimized Whisper implementation
+    ffmpeg # Audio processing for STT pipeline
+    
+    # AI Memory System
+    python3 # Python runtime
+    (python3.withPackages (ps: with ps; [
+      chromadb # Local vector database
+      sentence-transformers # Embedding models including Gemma 3 Embed
+      numpy # Numerical computing
+      torch # PyTorch for model inference
+    ]))
   ];
-  users.groups.player00 = {};
   
-  # System configuration
-  system.stateVersion = "24.05"; # Don't change this unless you know what you're doing
-  
-  # Allow unfree packages
-  nixpkgs.config.allowUnfree = true;
-  
-  # Enable experimental Nix features (required by Home Manager)
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
-
-
+  # Home Manager configuration
   home-manager.useUserPackages = true;
 
   # Agenix secrets management - DISABLED (agenix module not imported)
